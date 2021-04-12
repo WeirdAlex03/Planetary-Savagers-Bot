@@ -6,7 +6,11 @@ A custom Discord bot for the [Planetary Savagers Discord server](https://discord
 ### Currently in VERY early development. Stay tuned for further updates!
 
 ## Current TODOs
-[ ]
+- [ ] Embeds: general embed making/editing until specific commands are made
+ - [ ] Make embed
+ - [ ] Edit embed by msg ID
+    - [ ] Figure out how to do specifoc fields without being overly comspecifoc
+ - [ ] Delete embed by msg ID
 
 ## Idea List
 * Track people's location by message
