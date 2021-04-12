@@ -1,3 +1,4 @@
+![Profile Picture](ProfilePicture.png)
 # Planetary Savagers Bot
 A custom Discord bot for the [Planetary Savagers Discord server](https://discord.gg/jEdKtgB), developed by WeirdAlex03#5049.
 
