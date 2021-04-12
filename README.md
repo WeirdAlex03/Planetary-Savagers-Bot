@@ -10,7 +10,8 @@ A custom Discord bot for the [Planetary Savagers Discord server](https://discord
   - [ ] Make embed
   - [ ] Edit embed by msg ID
     - [ ] Figure out how to do specifoc fields without being overly comspecifoc
- - [ ] Delete embed by msg ID
+  - [ ] Delete embed by msg ID
+- [ ] Set up Projects tab?
 
 ## Idea List
 * Track people's location by message
