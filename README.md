@@ -9,7 +9,7 @@ A custom Discord bot for the [Planetary Savagers Discord server](https://discord
 - [ ] Embeds: general embed making/editing until specific commands are made
   - [ ] Make embed
   - [ ] Edit embed by msg ID
-    - [ ] Figure out how to do specifoc fields without being overly comspecifoc
+    - [ ] Figure out how to do specific fields without being overly complicated
   - [ ] Delete embed by msg ID
 - [ ] Set up Projects tab?
 
