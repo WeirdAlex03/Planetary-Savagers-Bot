@@ -6,3 +6,4 @@ A custom Discord bot for the [Planetary Savagers Discord server](https://discord
 ### Currently in VERY early development. Stay tuned for further updates!
 
 ## TODO
+[ ] 
