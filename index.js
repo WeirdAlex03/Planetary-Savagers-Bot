@@ -4,7 +4,7 @@ console.log("Starting bot");
 const Discord = require("discord.js");
 const client = new Discord.Client();
 //Start a web server so Replit keeps the bot running
-const keep_alive = require('./keep_alive.js');
+const keep_alive = require('./keep_alive.js'); //lgtm [js/unused-local-variable]
 //Brings in the token from the .env file
 const token = process.env.BOT_TOKEN;
 //Using a variable for the prefix makes it easy to change later
