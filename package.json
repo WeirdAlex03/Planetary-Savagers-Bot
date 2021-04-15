@@ -1,5 +1,5 @@
 {
-  "name": "Planetary-Savagers-Bot",
+  "name": "planetary-savagers-bot",
   "version": "1.0.0",
   "description": "A custom Discord bot for the Planetary Savagers Discord server, developed by WeirdAlex03#5049.",
   "main": "index.js",
@@ -12,5 +12,8 @@
   "dependencies": {
     "@replit/database": "^2.0.1",
     "discord.js": "^12.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0"
   }
 }
