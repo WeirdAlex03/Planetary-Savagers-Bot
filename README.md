@@ -12,7 +12,8 @@ A custom Discord bot for the [Planetary Savagers Discord server](https://discord
   - [ ] Edit embed by msg ID
     - [ ] Figure out how to do specific fields without being overly complicated
   - [ ] Delete embed by msg ID
-- [ ] Set up Projects tab?
+- [x] [Set up Projects tab](https://github.com/WeirdAlex03/Planetary-Savagers-Bot/projects/1)
+  -  Once embeds are done, this list will be removed from the README
 
 ## Idea List
 * Track people's location by message
