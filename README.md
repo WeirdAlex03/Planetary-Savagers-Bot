@@ -5,11 +5,11 @@
 
 A custom Discord bot for the [Planetary Savagers Discord server](https://discord.gg/jEdKtgB), developed by WeirdAlex03#5049.
 
-![Uptime Robot status](https://img.shields.io/uptimerobot/status/m787279966-0881f28120756ad97755f84a)
-![Uptime Robot ratio (7 days)](https://img.shields.io/uptimerobot/ratio/7/m787279966-0881f28120756ad97755f84a?label=uptime%20%28week%29)
-![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m787279966-0881f28120756ad97755f84a?label=uptime%20%28month%29)
-![LGTM Alerts](https://img.shields.io/lgtm/alerts/github/WeirdAlex03/Planetary-Savagers-Bot)
-![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/WeirdAlex03/Planetary-Savagers-Bot?label=code%20quality)
+[![Uptime Robot status](https://img.shields.io/uptimerobot/status/m787279966-0881f28120756ad97755f84a)](https://stats.uptimerobot.com/Xq54DTnrkm)
+[![Uptime Robot ratio (7 days)](https://img.shields.io/uptimerobot/ratio/7/m787279966-0881f28120756ad97755f84a?label=uptime%20%28week%29)](https://stats.uptimerobot.com/Xq54DTnrkm)
+[![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m787279966-0881f28120756ad97755f84a?label=uptime%20%28month%29)](https://stats.uptimerobot.com/Xq54DTnrkm)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/WeirdAlex03/Planetary-Savagers-Bot.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/WeirdAlex03/Planetary-Savagers-Bot/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/WeirdAlex03/Planetary-Savagers-Bot.svg?logo=lgtm&logoWidth=18&label=code%20quality)](https://lgtm.com/projects/g/WeirdAlex03/Planetary-Savagers-Bot/context:javascript)
 
 [![Discord](https://img.shields.io/discord/810735813621055509?color=7289da&label=Support%20Server&logo=discord&logoColor=fff)](https://discord.gg/72qa2YJZxY)
 [![Discord](https://img.shields.io/discord/718576019640156190?color=7289da&label=Planetary%20Savagers&logo=discord&logoColor=fff)](https://discord.gg/jEdKtgB)
