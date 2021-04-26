@@ -27,7 +27,14 @@ for (var file of commandFiles) {
 client.on("ready", () => {
 	console.log(`${client.user.tag} is online and ready for action!\n`);
 
-	client.user.setPresence({activity: { type: "PLAYING", name: `Prefix: ${prefix} | Just online, no commands set up yet ` }, status: "dnd"});
+	client.user.setPresence({
+			activity: { 
+				type: "WATCHING", 
+				name: `for ${prefix}help | Still in early development`, 
+			}, 
+			status: "idle",
+		},
+	);
 
 });
 
@@ -47,6 +54,15 @@ client.on("message", (message) => {
 	var args = message.content.slice(prefix.length).trim().split(" ");
 	var command = args.shift();
 
+	if (command === "commands") {
+		try {
+			return showHelp(message, args);
+		} catch (error) {
+			console.error(error);
+			message.reply(`there was an error trying to execute that command:\n\`\`\`diff\n+> ${message.cleanContent}\n-> ${error.name}: ${error.message.split('\n')}\`\`\``);
+		}
+	}
+
 	if (!client.commands.has(command)) {
 		return message.reply(`I don't have a \`${command}\` command. Are you sure you spelled it right? Capitalization matters. Try using \`${prefix}help\` to see all my commands.`);
 	}
@@ -58,6 +74,37 @@ client.on("message", (message) => {
 	}
 	
 });
+
+function showHelp(message, args) {
+
+	const COMMANDS_TO_INCLUDE = ["help",];
+
+	var embed = new Discord.MessageEmbed()
+		.setTitle("Commands")
+		.setDescription("Syntax: `<required_param>` | `[optional_param=default_value]`\nNote: Do not literally type out `<>` or `[]`. Replace them with your parameters")
+		.setThumbnail("https://raw.githubusercontent.com/twitter/twemoji/master/assets/72x72/2754.png")
+		.setFooter("Requested by " + message.author.username, message.author.displayAvatarURL())
+		.setTimestamp()
+		.setColor("PURPLE")
+	;
+
+	if (args.length === 0 || !client.commands.has(args[0])) {
+		//No argument given
+		for (var commandName of COMMANDS_TO_INCLUDE) {
+			var command = client.commands.get(commandName);
+			embed.addField(command.name.charAt(0).toUpperCase() + command.name.substr(1).toLowerCase(), `Usage: \`${prefix}${command.usage}\`
+			*${command.description}*`);
+		}
+	} else {
+		//Given argument
+		var command = client.commands.get(args[0]);	// jshint ignore:line
+		embed.addField(command.name.charAt(0).toUpperCase() + command.name.substr(1).toLowerCase(), `Usage: \`${prefix}${command.usage}\`
+		*${command.description}*`);
+	}
+	
+
+	message.channel.send(embed);
+}
 
 //This line should always be the last one in the code
 client.login(token);
