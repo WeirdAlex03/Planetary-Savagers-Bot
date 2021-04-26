@@ -77,7 +77,7 @@ client.on("message", (message) => {
 
 function showHelp(message, args) {
 
-	const COMMANDS_TO_INCLUDE = ["help",];
+	const COMMANDS_TO_INCLUDE = ["help", "makeEmbed", ];
 
 	var embed = new Discord.MessageEmbed()
 		.setTitle("Commands")
