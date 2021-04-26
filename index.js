@@ -54,7 +54,7 @@ client.on("message", (message) => {
 	var args = message.content.slice(prefix.length).trim().split(" ");
 	var command = args.shift();
 
-	if (command === "commands") {
+	if (command === "help") {
 		try {
 			return showHelp(message, args);
 		} catch (error) {
