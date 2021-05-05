@@ -1,6 +1,4 @@
 
-const Discord = require("discord.js");
-
 module.exports = {
 	name: "deleteEmbed",
 	description: 'Deletes an embed from the message ID (turn on developer mode in Discord > App Settings > Advanced and right click a message to see it).',

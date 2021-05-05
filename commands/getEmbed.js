@@ -1,6 +1,4 @@
 
-const Discord = require("discord.js");
-
 module.exports = {
 	name: "getEmbed",
 	description: 'Gets an embed from the message ID (turn on developer mode in Discord > App Settings > Advanced and right click a message to see it).',
@@ -16,6 +14,8 @@ module.exports = {
 			msgArgIndex = 0;
 		}
 
-		targetChannel.messages.fetch(args[msgArgIndex]).then(msg => message.channel.send("Here you go:\n```json\n" + JSON.stringify(msg.embeds[0].toJSON()) + "\n```"));
+		targetChannel.messages.fetch(args[msgArgIndex]).then(msg => {
+			message.channel.send("Here you go:\n```json\n" + JSON.stringify(msg.embeds[0].toJSON()) + "\n```");
+		});
 	},
 };

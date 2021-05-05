@@ -10,6 +10,7 @@ module.exports = {
 		if (channels.length !== 1) {
 				message.channel.send("ERROR: Please provide one channel to send the embed to", { code: "fix", });
 		}
+		
 		var json = message.content.slice(message.content.indexOf("{"), message.content.lastIndexOf("}")+1);
 		var embed = new Discord.MessageEmbed(JSON.parse(json));
 		channels[0].send(embed).then(message.channel.send("Done!"));
