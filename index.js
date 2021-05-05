@@ -30,9 +30,9 @@ client.on("ready", () => {
 	client.user.setPresence({
 			activity: { 
 				type: "WATCHING", 
-				name: `for ${prefix}help | Still in early development`, 
+				name: `for ${prefix}help | Now with embedding!`, 
 			}, 
-			status: "idle",
+			status: "online",
 		},
 	);
 
@@ -54,7 +54,7 @@ client.on("message", (message) => {
 	var args = message.content.slice(prefix.length).trim().split(" ");
 	var command = args.shift();
 
-	if (command === "commands") {
+	if (command === "help") {
 		try {
 			return showHelp(message, args);
 		} catch (error) {
@@ -77,7 +77,7 @@ client.on("message", (message) => {
 
 function showHelp(message, args) {
 
-	const COMMANDS_TO_INCLUDE = ["help",];
+	const COMMANDS_TO_INCLUDE = ["help", "makeEmbed", "getEmbed", "editEmbed", "deleteEmbed", ];
 
 	var embed = new Discord.MessageEmbed()
 		.setTitle("Commands")
