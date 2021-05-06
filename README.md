@@ -1,4 +1,4 @@
-
+<div align="center">
 <img src="ProfilePicture.png" alt="Profile Picture" width=150>
 
 # Planetary Savagers Bot
@@ -14,42 +14,24 @@ A custom Discord bot for the [Planetary Savagers Discord server](https://discord
 [![Discord](https://img.shields.io/discord/810735813621055509?color=7289da&label=Support%20Server&logo=discord&logoColor=fff)](https://discord.gg/72qa2YJZxY)
 [![Discord](https://img.shields.io/discord/718576019640156190?color=7289da&label=Planetary%20Savagers&logo=discord&logoColor=fff)](https://discord.gg/jEdKtgB)
 
-**Currently in VERY early development. Stay tuned for further updates!**
+**Currently in early development. Stay tuned for further updates!**
 
-## Current TODOs
+</div>
 
-* [ ] Embeds: general embed making/editing until specific commands are made
-  * [ ] Make embed
-  * [ ] Edit embed by msg ID
-    * [ ] Figure out how to do specific fields without being overly complicated
-  * [ ] Delete embed by msg ID
-* [x] [Set up Projects tab](https://github.com/WeirdAlex03/Planetary-Savagers-Bot/projects/1)
-  * Once embeds are done, this list will be removed from the README
+## Features
 
-## Idea List
+Please see the [projects tab](https://github.com/WeirdAlex03/Planetary-Savagers-Bot/projects/1) for an overview of planned, in-progress, and completed features. More info will be added here over time
 
-(Will be removed soon, please see the [projects tab](https://github.com/WeirdAlex03/Planetary-Savagers-Bot/projects/1) instead)
+## Inviting
 
-* Track people's location by message
-  * Show current occupants in channel description
-  * List all places w/ people in updating embed
-  * Commands to manually set, lookup location
-  * "Travelling to" if msg mentions "to" and channel name?
-  * Ignore (out of rp) messages and those not in RP category
-* Welcome/leave messages
-* Reaction role for divisions, automatically close if position is full?
-  * Separate embed to describe each division, mention current members (active/total) and say if closed
-* Quotes
-  * Command to send quotes to #quotes channel
-  * Show person who sent it, person who quoted it, channel, optional context, link to jump to message
-* Track activity
-  * If no activity in any channel, assign "Inactive" role
-  * Makes things like division info easier to do, total - inactive = active
-* Track current ship location/mission and any side missions/stories
-  * Use commands to update
-  * Report in embed(s)
-* Backstories
-  * Show in embed
-  * Ability to add extra "docs"/sections to embed for other information
-  * Set/update with commands
-* Respond to prefix or ping
+This bot is tailor-made for the Planetary Savagers Discord server and is not intended for general purpose use. Reach out to me directly (WeirdAlex03#5049) or [join my Discord server](https://discord.gg/72qa2YJZxY) if you'd like your own version of this bot.
+
+If you'd like to use this as a basis for your own bot, you may fork the project and make whatever changes you need.
+
+## Contributing
+
+While I appreciate feedback, I am not currently looking for help with development. Please reach out to me directly (WeirdAlex03#5049) or [join my Discord server](https://discord.gg/72qa2YJZxY) before starting any contributions.
+
+## License
+
+Planetary Savagers Bot is licensed under [ISC License](LICENSE.txt).
