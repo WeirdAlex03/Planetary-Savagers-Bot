@@ -24,7 +24,7 @@ for (var file of commandFiles) {
 }
 
 //Confirm that the bot has logged in
-client.on("ready", () => {
+client.once("ready", () => {
 	console.log(`${client.user.tag} is online and ready for action!\n`);
 
 	client.user.setPresence({
@@ -102,9 +102,13 @@ function showHelp(message, args) {
 		*${command.description}*`);
 	}
 	
-
 	message.channel.send(embed);
 }
+
+client.once("invalidated", () => {
+	console.error("Client session invalidated, terminating program.")
+	process.exit(1);
+});
 
 //This line should always be the last one in the code
 client.login(token);
